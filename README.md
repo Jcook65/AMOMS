@@ -2,9 +2,9 @@
 AMOMS: The SWE4724 Software Engineering Capstone project, Alternative Medicine Office Management System.
 
 ******************NOTICE***********************
-*                                             *
-* This project is being written in PYTHON 2.7 *
-*                                             *
+                                            
+  This project is being written in PYTHON 2.7 
+                                            
 ***********************************************
 
 This is using Python's web framework, Django.
