@@ -20,5 +20,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^patients', include('patients.urls')),
     url(r'^appointments', include('appointments.urls')),
-    url(r'^login', include('login.urls'))
+    url(r'^login', include('login.urls')),
+    url(r'^prescriptions', include('prescriptions.urls')),
+    url(r'^schedules', include('schedules.urls')),
 ]
