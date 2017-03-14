@@ -11,3 +11,10 @@ class Prescription(models.Model):
     employeeID = models.ForeignKey(employeeModels.Employee)
     createdTime = models.DateTimeField()
     prescriptionTitle = models.CharField(max_length=250)
+
+class Diagnoses(models.Model):
+    diagnosesID = models.PositiveIntegerField(primary_key=True)
+    diagnosesName = models.TextField()
+    diagnosesDateBegin = models.DateTimeField()
+    diagnosesDateEND = models.DateTimeField()
+    diagnosesSeverity = models.PositiveIntegerField()
