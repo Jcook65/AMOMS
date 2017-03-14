@@ -5,7 +5,7 @@ from login import models as employeeModels
 
 
 class Schedule(models.Model):
-    scheduleID = models.PositiveIntegerField(primary_key=True, max_length=255)
+    scheduleID = models.PositiveIntegerField(primary_key=True)
     dayOfWeek = models.DateField()
     startTime = models.DateTimeField()
     endTime = models.DateTimeField()
