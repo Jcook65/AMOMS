@@ -4,8 +4,8 @@ from . import views
 app_name = 'login'
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
+    url(r'^$', views.IndexView.as_view(), name='index'),
 
-    url(r'^home/&', views.home, name='home'),
+    url(r'^home/$', views.DashboardView.as_view(), name='home'),
 
 ]
