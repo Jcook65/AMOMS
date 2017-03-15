@@ -1,5 +1,8 @@
-from django.http import HttpResponse
+from django.views import generic
 
 
-def index(request):
-    return HttpResponse("<h1>This is the Appointments app homepage")
+class IndexView(generic.ListView):
+    template_name = 'appointments/index.html'
+
+    def get_queryset(self):
+        return None
