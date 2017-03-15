@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b14d278-21e3-48bd-83ca-bbe008f74d5d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appointments/templates/appointments/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/prescriptions/templates/prescriptions/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedules/templates/schedules/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/AMOMS.iml" afterPath="$PROJECT_DIR$/.idea/AMOMS.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appointments/urls.py" afterPath="$PROJECT_DIR$/appointments/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appointments/views.py" afterPath="$PROJECT_DIR$/appointments/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/login/base.html" afterPath="$PROJECT_DIR$/login/templates/login/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/login/index.html" afterPath="$PROJECT_DIR$/login/templates/login/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/urls.py" afterPath="$PROJECT_DIR$/login/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/views.py" afterPath="$PROJECT_DIR$/login/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prescriptions/urls.py" afterPath="$PROJECT_DIR$/prescriptions/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prescriptions/views.py" afterPath="$PROJECT_DIR$/prescriptions/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schedules/urls.py" afterPath="$PROJECT_DIR$/schedules/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schedules/views.py" afterPath="$PROJECT_DIR$/schedules/views.py" />
-    </list>
+    <list default="true" id="3b14d278-21e3-48bd-83ca-bbe008f74d5d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
