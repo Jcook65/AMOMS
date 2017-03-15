@@ -4,7 +4,5 @@ from . import views
 app_name = 'schedules'
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
-
-    url(r'^home/$', views.index, name='home')
+    url(r'^$', views.IndexView.as_view(), name='index'),
 ]

@@ -6,6 +6,6 @@ app_name = 'login'
 urlpatterns = [
     url(r'^$', views.IndexView.as_view(), name='index'),
 
-    url(r'^home/$', views.DashboardView.as_view(), name='home'),
+    url(r'^/dashboard/$', views.DashboardView.as_view(), name='home'),
 
 ]

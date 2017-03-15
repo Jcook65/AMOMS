@@ -1,8 +1,15 @@
 from django.views import generic
 
 
-class IndexView(generic.FormView):
+class IndexView(generic.ListView):
     template_name = 'login/index.html'
 
-class DashboardView(generic.FormView):
+    def get_queryset(self):
+        return None
+
+
+class DashboardView(generic.ListView):
     template_name = 'login/home.html'
+
+    def get_queryset(self):
+        return None
