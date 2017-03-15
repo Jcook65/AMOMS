@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="3b14d278-21e3-48bd-83ca-bbe008f74d5d" name="Default" comment="" />
+=======
+    <list default="true" id="3b14d278-21e3-48bd-83ca-bbe008f74d5d" name="Default" comment="">
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/appointments/templates/appointments/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/prescriptions/templates/prescriptions/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schedules/templates/schedules/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/AMOMS.iml" afterPath="$PROJECT_DIR$/.idea/AMOMS.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appointments/urls.py" afterPath="$PROJECT_DIR$/appointments/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/appointments/views.py" afterPath="$PROJECT_DIR$/appointments/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/login/base.html" afterPath="$PROJECT_DIR$/login/templates/login/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/login/index.html" afterPath="$PROJECT_DIR$/login/templates/login/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/urls.py" afterPath="$PROJECT_DIR$/login/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/views.py" afterPath="$PROJECT_DIR$/login/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prescriptions/urls.py" afterPath="$PROJECT_DIR$/prescriptions/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prescriptions/views.py" afterPath="$PROJECT_DIR$/prescriptions/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schedules/urls.py" afterPath="$PROJECT_DIR$/schedules/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/schedules/views.py" afterPath="$PROJECT_DIR$/schedules/views.py" />
+>>>>>>> 6b105f94853534f42c3f36cde580ac5062eb2c47
+    </list>
+>>>>>>> 180ad6e877b02bdd36a53400fdcd9dfb1e234b98
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,9 +103,17 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/prescriptions/templates/prescriptions/index.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="170">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+=======
             <state relative-caret-position="18">
               <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
               <folding />
+>>>>>>> 6b105f94853534f42c3f36cde580ac5062eb2c47
             </state>
           </provider>
         </entry>
@@ -703,6 +736,9 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/login/templates/login/index.html">
+=======
     <entry file="file://$PROJECT_DIR$/appointments/templates/appointments/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -712,6 +748,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login/views.py">
+>>>>>>> 6b105f94853534f42c3f36cde580ac5062eb2c47
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="19" />
@@ -735,6 +772,23 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/patients/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+=======
     <entry file="file://$PROJECT_DIR$/prescriptions/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -796,6 +850,7 @@
         <state relative-caret-position="108">
           <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding />
+>>>>>>> 6b105f94853534f42c3f36cde580ac5062eb2c47
         </state>
       </provider>
     </entry>
