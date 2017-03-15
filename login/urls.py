@@ -6,6 +6,6 @@ app_name = 'login'
 urlpatterns = [
     url(r'^$', views.index, name='index'),
 
-    url(r'^register/$', views.UserFormView.as_view(), name='register'),
+    url(r'^home/&', views.home, name='home'),
 
 ]
