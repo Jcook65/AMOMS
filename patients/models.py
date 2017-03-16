@@ -25,5 +25,5 @@ class Patient(models.Model):
 
 class Notes(models.Model):
     noteID = models.PositiveIntegerField(primary_key=True)
-    patientID = models.PositiveIntegerField(primary_key=False)
+    patientID = models.ForeignKey(Patient, on_delete=models.CASCADE)
     noteText = models.CharField(max_length=1000)
