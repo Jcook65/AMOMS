@@ -1,8 +1,9 @@
-<link rel="stylesheet" type="text/css" href="{% static 'patients/style.css' %}" />
+
 {% extends 'login/base.html' %}
+{% load staticfiles %}
 {% block title %} Patients List {% endblock %}
 {% block body %}
-
+<link rel="stylesheet" type="text/css" href="{% static 'patients/style.css' %}" />
 {% if patient_list %}
 <h3>List of Patients</h3>
 <table>
