@@ -1,0 +1,74 @@
+patients.csspatients.css html {
+    background-color: black;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+#HeaderDiv {
+    background-color: grey;
+    margin: 20px;
+    border-radius: 10px;
+    color: black;
+    width: 92%;
+}
+
+h1 {
+    padding: 10px;
+}
+
+#startAppt {
+    width: .5vw;
+    padding: 5px;
+    background-color: lightgreen;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#startAppt:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#PatientInfo {
+    width: 99%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#Diag {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    height: 33vw;
+    display: inline-block;
+}
+
+#Prescrip {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    height: 33vw;
+    display: inline-block;
+    position: relative;
+}
+
+#PNotes {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    height: 33vw;
+    display: inline-block;
+}
+
+.customA {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    margin: 0px !important;
+    padding: 8px;
+    font-size: 20px;
+}
