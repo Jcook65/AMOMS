@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Patient(models.Model):
-    patientID = models.PositiveIntegerField(primary_key=True)
+    patientID = models.AutoField(primary_key=True)
     firstName = models.CharField(max_length=100)
     lastName = models.CharField(max_length=100)
     middleI = models.CharField(max_length=1, null=True)
@@ -28,7 +28,7 @@ class Patient(models.Model):
 
 
 class Notes(models.Model):
-    noteID = models.PositiveIntegerField(primary_key=True)
+    noteID = models.AutoField(primary_key=True)
     patientID = models.ForeignKey(Patient, on_delete=models.CASCADE)
     noteText = models.TextField(max_length=1000)
 

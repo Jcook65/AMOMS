@@ -4,7 +4,7 @@ from patients import models as patientModels
 from login import models as employeeModels
 
 class Appointment(models.Model):
-    appointmentID = models.PositiveIntegerField(primary_key=True)
+    appointmentID = models.AutoField(primary_key=True)
     patientID = models.ForeignKey(patientModels.Patient)
     employeeID = models.ForeignKey(employeeModels.Employee)
     scheduledDate = models.DateField()
