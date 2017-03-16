@@ -1,0 +1,13 @@
+{% extends 'login/base.html' %}
+{% block title %} Patients List {% endblock %}
+
+{% block body %}
+{% if patients %}
+<h3>List of Patients</h3>
+<ul>
+    {% for patient in patients %}
+        <li><a href="{% url 'patients:detail' patient.firstName %}">{{patient.firstName}}</a> </li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endblock %}
