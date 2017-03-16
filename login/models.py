@@ -16,4 +16,4 @@ class Employee(User):
     access = models.CharField(max_length=1, choices=access, default="R", null=False)
 
     def get_absolute_url(self):
-        return reverse('login:home', kwargs={'pk':self.pk})
+        return reverse('patients:home', kwargs={'pk':self.pk})

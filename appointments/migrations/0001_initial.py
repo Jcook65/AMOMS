@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('login', '0001_initial'),
+        ('patients', '0001_initial'),
         ('patients', '0001_initial'),
     ]
 
@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
                 ('checkoutTime', models.DateTimeField()),
                 ('appointmentStart', models.DateTimeField()),
                 ('appointmentEnd', models.DateTimeField()),
-                ('employeeID', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='login.Employee')),
+                ('employeeID', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='patients.Employee')),
                 ('patientID', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='patients.Patient')),
             ],
         ),

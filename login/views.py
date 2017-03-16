@@ -7,7 +7,7 @@ from django.views.generic import View
 from .forms import UserForm
 
 class IndexView(generic.ListView):
-    template_name = 'login/details.html'
+    template_name = 'login/index.html'
 
     def get_queryset(self):
         return None

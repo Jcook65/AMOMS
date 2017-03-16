@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('login', '0002_auto_20170308_2247'),
+        ('patients', '0002_auto_20170308_2247'),
     ]
 
     operations = [
@@ -23,7 +23,7 @@ class Migration(migrations.Migration):
                 ('printTime', models.DateTimeField()),
                 ('createdTime', models.DateTimeField()),
                 ('prescriptionTitle', models.CharField(max_length=250)),
-                ('employeeID', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='login.Employee')),
+                ('employeeID', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='patients.Employee')),
             ],
         ),
     ]
