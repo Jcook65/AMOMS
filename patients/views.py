@@ -12,4 +12,6 @@ class IndexView(generic.ListView):
 
 class DetailView(generic.DetailView):
     model = Patient
-    template_name = 'patient/detail.html'
+    template_name = 'patients/details.html'
+    slug_field = 'patientID'
+    pk_url_kwarg = 'patientID'
