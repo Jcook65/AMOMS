@@ -5,6 +5,7 @@ from django.db import models
 
 
 class Employee(User):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     employeeID = models.PositiveIntegerField(primary_key=True)
     # username = models.CharField(max_length=50, null=False)
     # password = models.CharField(max_length=128, null=False)

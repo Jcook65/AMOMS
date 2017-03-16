@@ -1,5 +1,5 @@
 from __future__ import unicode_literals
-
+from django.core.urlresolvers import reverse
 from django.db import models
 
 
@@ -23,7 +23,14 @@ class Patient(models.Model):
     children = models.PositiveIntegerField()
     medicalHistory = models.TextField()
 
+    def get_absolute_url(self):
+        return reverse('patients:details', kwargs={'pk':self.pk})
+
+
 class Notes(models.Model):
     noteID = models.PositiveIntegerField(primary_key=True)
     patientID = models.ForeignKey(Patient, on_delete=models.CASCADE)
-    noteText = models.CharField(max_length=1000)
+    noteText = models.TextField(max_length=1000)
+
+    def get_absolute_url(self):
+        return reverse('patients:details', kwargs={'pk':self.pk})

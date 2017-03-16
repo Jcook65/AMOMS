@@ -1,11 +1,11 @@
 from django.views import generic
+from django.shortcuts import render, redirect
+from django.views.generic import View
+from .models import Patient, Notes
+from prescriptions.models import Diagnoses, Prescription
+from .forms import DiagForm, NotesForm, PrescriptionForm
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
-from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login
-from django.views.generic import View
-from .models import Patient
-from .forms import DiagForm, NotesForm, PrescriptionForm
 
 class IndexView(generic.ListView):
     template_name = 'patients/patients.html'
@@ -21,29 +21,18 @@ class DetailView(generic.DetailView):
     slug_field = 'patientID'
     pk_url_kwarg = 'patientID'
 
-class DiagnosisView(View):
-    form_class = DiagForm
-    template_name = 'patients/diagnosis.html'
 
-    # display blank form
-    def get(self, request):
-        form = self.form_class(None)
-        return render(request, self.template_name, {'form': form})
+class DiagnosisView(CreateView):
+    model = Diagnoses
+    fields = ['diagnosesName', 'diagnosesDateBegin', 'diagnosesSeverity', ]
 
-class PrescriptionView(View):
-    form_class = PrescriptionForm
-    template_name = 'patients/prescription.html'
 
-    # display blank form
-    def get(self, request):
-        form = self.form_class(None)
-        return render(request, self.template_name, {'form': form})
 
-class NotesView(View):
-    form_class = NotesForm
-    template_name = 'patients/notes.html'
+class PrescriptionView(CreateView):
+    model = Prescription
+    fields = ['prescriptionTitle', 'prescriptionTxt', 'createdTime', ]
 
-    # display blank form
-    def get(self, request):
-        form = self.form_class(None)
-        return render(request, self.template_name, {'form': form})
+
+class NotesView(CreateView):
+    model = Notes
+    fields = ['noteText', ]

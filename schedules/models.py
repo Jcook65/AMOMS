@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
-from login import models as employeeModels
+from login.models import Employee
 
 
 class Schedule(models.Model):
@@ -9,5 +9,5 @@ class Schedule(models.Model):
     dayOfWeek = models.DateField()
     startTime = models.DateTimeField()
     endTime = models.DateTimeField()
-    employeeID = models.ForeignKey(employeeModels.Employee)
+    employeeID = models.ForeignKey(Employee)
 
