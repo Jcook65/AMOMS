@@ -1,18 +1,10 @@
-from django.http import HttpResponse
-from django.template import loader
-from prescriptions.models import Diagnoses
+from django.views import generic
 from .models import Patient
-import json 
 
-def index(request):
-    
-    patient = Patient.objects.all()
-    patient = patient[0]
-    template = loader.get_template('patients/patients.html')
-    
-    
-    context = {
-        'patient' : patient,
-        
-    }
-    return HttpResponse(template.render(context, request))
+
+class IndexView(generic.ListView):
+    template_name = 'patients/patients.html'
+    context_object_name = 'patient'
+
+    def get_queryset(self):
+        return Patient.objects.all()

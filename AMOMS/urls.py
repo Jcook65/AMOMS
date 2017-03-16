@@ -15,12 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from login import views
 
 urlpatterns = [
+    url(r'^$', views.IndexView.as_view()),
     url(r'^admin/', admin.site.urls),
-    url(r'^patients', include('patients.urls')),
-    url(r'^appointments', include('appointments.urls')),
-    url(r'^login', include('login.urls')),
-    url(r'^prescriptions', include('prescriptions.urls')),
-    url(r'^schedules', include('schedules.urls')),
+    url(r'^patients/', include('patients.urls')),
+    url(r'^appointments/', include('appointments.urls')),
+    url(r'^login/', include('login.urls')),
+    url(r'^prescriptions/', include('prescriptions.urls')),
+    url(r'^schedules/', include('schedules.urls')),
 ]
