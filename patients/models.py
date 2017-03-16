@@ -23,3 +23,7 @@ class Patient(models.Model):
     children = models.PositiveIntegerField()
     medicalHistory = models.TextField()
 
+class Notes(models.Model):
+    noteID = models.PositiveIntegerField(primary_key=True)
+    patientID = models.PositiveIntegerField(primary_key=False)
+    noteText = models.CharField(max_length=1000)

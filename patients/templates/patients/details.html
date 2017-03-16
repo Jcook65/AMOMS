@@ -19,28 +19,19 @@
     </div>
     <div id="PatientInfo">
         <div id="Diag">
-
-            <table class="table table-striped table-bordered">
-                <thead style="background-color: grey;">
-                    <th>Diagnosis Name</th>
-                    <th>Start Date</th>
-                    <th>End Date</th>
-                    <th>Severity</th>
-                    <th>Resolve</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Chicken Pox</td>
-                        <td>01/01/01</td>
-                        <td>N/A</td>
-                        <td>LOW</td>
-                        <td>NO</td>
-                </tbody>
-            </table>
+            <a class="customA" href="{% url 'patients:diagnosis' %}">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp; Add Diagnosis
+            </a>
         </div>
         <div id="Prescrip">
+            <a class="customA" href="{% url 'patients:prescription' %}">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp; Add Prescription
+            </a>
         </div>
         <div id="PNotes">
+            <a class="customA" href="{% url 'patients:notes' %}">
+                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp; Add Note
+            </a>
         </div>
     </div>
 
